@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:form="http://www.w3.org/1999/html" xmlns:c="http://java.sun.com/jsp/jstl/core">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=windows-1251" />
+    <title>List Users</title>
+</head>
+<body>
+<div>
+    <h1>List of user</h1>
+    <ul>
+        <th:block th:each="user : ${listUsers}">
+            <li th:utext="${user}">...</li>
+        </th:block>
+    </ul>
+</div>
+<br>
+<br>
+<a href="/users">go to start page</a>
+</body>
+</html>
